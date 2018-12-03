@@ -2,7 +2,7 @@
 import numpy
 
 def main():
-  f = open('one_input.txt')
+  f = open('test_data.txt')
   fab = numpy.zeros((1200, 1200))
   for line in f:
     line = line.replace('#', '')
@@ -37,7 +37,7 @@ def main():
           posy = sy + yi
           if fab[posx][posy] > 1.0:
             flag += 1
-      if flag < 1:
+      if flag == 0:
         print(key)
 
 if __name__ == '__main__':

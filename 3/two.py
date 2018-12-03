@@ -13,7 +13,7 @@ def main():
     line = line.replace('x', ',')
     wip1 = line.split(' ')
 
-    cut_data.update( {int(wip1[0]): {'x': wip1[1].split(',')[0],
+    cut_data.update({int(wip1[0]): {'x': wip1[1].split(',')[0],
                                'y': wip1[1].split(',')[1],
                                'w': wip1[2].split(',')[0],
                                'h': wip1[2].split(',')[1],}})

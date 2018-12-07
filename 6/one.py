@@ -9,7 +9,6 @@ def main():
   data = {}
   x_values = []
   y_values = []
-  field = numpy.empty((365,365), dtype=object)
   for first in string.ascii_uppercase:
     for second in string.ascii_uppercase:
       letters.append(first + second)
@@ -28,7 +27,9 @@ def main():
     x = int(data[key][0])
     y = int(data[key][1])
     field[x][y] = str(key)
-  print(field)  
+  for i, j in field:
+    print(field[i][j])
+
 
 
 

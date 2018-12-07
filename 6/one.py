@@ -27,8 +27,11 @@ def main():
     x = int(data[key][0])
     y = int(data[key][1])
     field[x][y] = str(key)
-  for i, j in field:
-    print(field[i][j])
+
+  for i in range(len(field)):
+    for j in range(len(field[i])):
+      print(field[i][j])
+
 
 
 

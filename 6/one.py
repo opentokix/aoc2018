@@ -10,7 +10,7 @@ numpy.set_printoptions(threshold=numpy.nan)
 numpy.set_printoptions(linewidth=600)
 
 def main():
-  f = open('one_input.txt')
+  f = open('test_input.txt')
   letters = []
   data = {}
   x_values = []
